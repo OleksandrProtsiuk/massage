@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :galleries
   resources :massage_types
   root 'static_pages#index', as: 'root'
 
