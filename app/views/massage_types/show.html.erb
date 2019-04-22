@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @massage_type.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @massage_type.body %>
+</p>
+
+<%= link_to 'Edit', edit_massage_type_path(@massage_type) %> |
+<%= link_to 'Back', massage_types_path %>

@@ -1,0 +1,2 @@
+module MassageTypesHelper
+end
