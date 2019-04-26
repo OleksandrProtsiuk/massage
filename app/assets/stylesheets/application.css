@@ -58,3 +58,21 @@ h1 {
     font-family: 'Teddy Bear', arial;
     text-shadow: 4px 4px 4px #aaa;
 }
+
+body {
+
+}
+
+#modal-sign-up {
+    background: rgba(50, 12, 2, 0.3);
+}
+
+.modal-body, .modal-header, .modal-footer {
+    background-color: rgba(50, 12, 2, 0.3);
+}
+
+#name, #phone, #date, #mail {
+    font-family: Birch;
+    font-size: medium;
+    font-weight: bold;
+}

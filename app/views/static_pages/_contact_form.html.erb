@@ -1,0 +1,31 @@
+
+<div>
+  <b-button v-b-modal.modal-sign-up>Sign up now</b-button>
+
+  <b-modal id="modal-sign-up" centered>
+
+    <%= form_with(url: users_path, remoute: true) do |form| %>
+
+      <p>Type here your name</p>
+      <b-form-input  name="user[name]" id="name" size="lg" type="text"></b-form-input>
+      <br>
+      <p>Type here your contact phone</p>
+      <b-form-input name="user[phone]" id="phone" size="lg" type="tel"></b-form-input>
+      <br>
+      <p>Type here your e-mail</p>
+      <b-form-input name="user[mail]" id="mail" size="lg" type="mail"></b-form-input>
+      <br>
+      <p>Select time zone</p>
+      <b-form-select name="user[date]" id="date" size="lg" type="date">
+        <option value="day">Day</option>
+        <option value="evening">Evening</option>
+      </b-form-select>
+      <br>
+
+      <div class="actions">
+        <%= form.submit %>
+      </div>
+    <% end %>
+
+  </b-modal>
+</div>
