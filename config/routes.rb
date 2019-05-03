@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  mount Spina::Engine => '/'
   resources :users
   root 'static_pages#index', as: 'root'
 
