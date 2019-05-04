@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :users
   root 'static_pages#index', as: 'root'
 
-  get 'static_pages/index'
+  #get 'static_pages/index'
   get 'static_pages/price'
   get 'static_pages/contacts'
 
