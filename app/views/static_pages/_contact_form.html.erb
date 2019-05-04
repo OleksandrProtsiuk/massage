@@ -4,7 +4,7 @@
 
   <b-modal id="modal-sign-up" centered>
 
-    <%= form_with(url: users_path, remoute: true) do |form| %>
+    <%= form_with(url: "#{'users_path'}", remoute: true) do |form| %>
 
       <p>Type here your name</p>
       <b-form-input  name="user[name]" id="name" size="lg" type="text"></b-form-input>

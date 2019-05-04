@@ -3,3 +3,5 @@
 <h1>StaticPages#index</h1>
 <hr>
 <p>Find me in app/views/static_pages/index.html.erb</p>
+
+<%= @page.content(:text).try(:html_safe) %>
